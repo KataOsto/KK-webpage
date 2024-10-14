@@ -1,0 +1,6 @@
+<button class="btn btn--primary">Kontakt</button>
+<button class="btn btn--primary btn--block">Kontakt</button>
+<button class="btn btn--secondary">Kontakt</button>
+<button class="btn btn--secondary btn--block">Kontakt</button>
+<button class="btn btn--accent">Kontakt</button>
+<button class="btn btn--accent btn--block">Kontakt</button>

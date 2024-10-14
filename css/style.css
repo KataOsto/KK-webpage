@@ -271,25 +271,19 @@ transform: rotate(0);
 /*Buttons*/
 
 .btn {
-  white-space: nowrap;
-  text-transform: uppercase;
-  padding: 2rem 4vw;
-  font-weight: 600;
-  font-size: 1.8rem;
-  cursor: pointer;
-  margin: 1rem 0;
-  outline: 0;
+  border-radius: 40px;
   border: 0;
-  border-radius: 0,1em;
+  cursor: pointer;
+  font-size: 1,8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  letter-spacing: 0.09rem;
+  padding: 2rem 3rem;
   text-align: center;
-  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
-.btn .icon {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
-  vertical-align: middle;
-}
+
 .btn--primary {
   background: var(--color-primary);
   color: #fff;
@@ -297,36 +291,32 @@ transform: rotate(0);
 .btn--primary:hover {
   background: var(--color-secondary);
 }
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+.btn--secondary:hover {
+  background: var(--color-accent);
+}
 .btn--accent {
   background: var(--color-accent);
   color: #fff;
 }
 .btn--accent:hover {
-  background: #ec3000;
+  background: var(--color-primary);
 }
+
 .btn--block {
   width: 100%;
   display: inline-block;
 }
-.btn--outline {
-  background: #fff;
-  color: var(--color-headings);
-  border: 2px solid var(--color-headings);
-}
-.btn--stretched {
-padding-left: 6rem;
-padding-right: 6rem;
-}
 
-.btn--outline:hover {
-  background: var(--color-headings);
-  color: #fff;
-}
-@media  screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .btn {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
+
 
 /*Blocks*/
 .block {
