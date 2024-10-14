@@ -22,8 +22,11 @@ html {
   --color-secondary: #36553D; /*hunter green*/
   --color-accent: #577259; /*reseda green*/
   --color-tekst-primery: #202020; /*eerie black*/
-  --colro-text-invert: #ffffff; /*white*/
+  --color-text-invert: #ffffff; /*white*/
   --color-body:#2c2c2c; /*deep charocal*/
+  --color-border: #ccc;
+  --border-radius: 30
+  px;
 }
 
 body {
@@ -321,12 +324,29 @@ transform: rotate(0);
 
 /* Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs  Inputs */
 .input {
-  border-radius: 15px;
-  border: 1px solid #ccc;
+  border-radius: 30px;
+  border: 1px solid var(--color-border);
   color: var(--color-headings);
   font-size: 2rem;
   outline: 0;
   padding: 1.5rem 3.5rem;
+}
+
+.input-group {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 ::placeholder {
