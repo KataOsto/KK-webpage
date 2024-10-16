@@ -486,7 +486,7 @@ margin: 0;
 /*HERO*/
 
 .hero {
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 47.33%), url(/assets/images/hero.jpg) lightgray 50% / cover no-repeat;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 47.33%), url(/assets/images/image_hero.jpg) lightgray 50% / cover no-repeat;
 height: 50%;
 display: flex;
 background-position: center;
