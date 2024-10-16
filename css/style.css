@@ -24,6 +24,7 @@ html {
   --color-tekst-primery: #202020; /*eerie black*/
   --color-text-invert: #ffffff; /*white*/
   --color-body:#2c2c2c; /*deep charocal*/
+  --color-body_light:#3d3c3c; /*....*/
   --color-border: #ccc;
   --border-radius: 30
   px;
@@ -417,6 +418,45 @@ transform: rotate(0);
   width: 50px;
   height: 50px;
 }
+
+
+/*Quotes*/
+.quote {
+  font-size: 2rem;
+  font-size: italic;
+  color: var(--color-text-invert);
+  line-height: 1.3;
+}
+.quote__heading {
+  font-style: normal;
+}
+
+.quote__text::before {
+content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+  }
+
+.quote__city {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 1.6rem;
+  }
+  .quote__heading {
+    font-size: 1.8rem;
+  }
+  .quote__city {
+    font-size: 1.4rem;
+  }
+}
+
+
 
 /*Navigation Bar*/
 
