@@ -310,6 +310,11 @@ transform: rotate(0);
   background: var(--color-primary);
 }
 
+.btn--stretched {
+padding-left: 6rem;
+padding-right: 6rem;
+}
+
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -424,7 +429,7 @@ transform: rotate(0);
 .quote {
   font-size: 2rem;
   font-size: italic;
-  color: var(--color-text-invert);
+  color: var(--color-body);
   line-height: 1.3;
 }
 .quote__heading {
@@ -456,7 +461,79 @@ content: open-quote;
   }
 }
 
+/*Project - zamiast testimonials*/
 
+.project {
+  display: flex;
+  padding: 3rem;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0,3s;
+  border-radius: 30px;
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.project__image {
+  width: 100%;
+  border-radius: 28px;
+}
+
+.project .quote {
+  text-align: flex;
+}
+
+@media screen and (min-width: 768px) {
+.project .quote,
+.project .quote__city {
+  font-size: 2.4rem;
+}
+.project .quote {
+  margin-left: 2rem;
+}
+}
+
+
+/*Callouts - kontakt*/
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background:var(--color-primary);
+  color: #fff;
+}
+.callout--secondary {
+  background:var(--color-secondary);
+  color: #fff;
+}
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+.callout__content {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }  
+  .callout .btn {
+    justify-self: start;
+    margin:  0 2rem;
+  }
+}
 
 /*Navigation Bar*/
 
