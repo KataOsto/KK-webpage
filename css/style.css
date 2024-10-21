@@ -14,7 +14,7 @@ html {
   ustawiając 62,5% z 16px = 10px
   czyli 1rem to 10px*/
   font-size: 62.5%;
-  background: #fff;
+  background: var(--color-body_light);
 }
 
 :root {
@@ -28,6 +28,11 @@ html {
   --color-border: #ccc;
   --border-radius: 30
   px;
+}
+
+
+li::marker {
+  content: none;
 }
 
 body {
@@ -166,7 +171,6 @@ a {
   list-style: none;
   padding-left: 0;
   color: var(--color-headings);
-  
 }
 
 .list--inline .list__item {  /* obiekty listy w jednej lini*/
@@ -380,7 +384,7 @@ padding-right: 6rem;
 .block {
   --padding-vertical: 6rem;
  padding: var(--padding-vertical) 2rem;
- border: 2px solid red;
+
 }
 
 .block__header {
@@ -560,63 +564,65 @@ content: open-quote;
 /*Navigation Bar*/
 
 .nav {
-  background: none;
-  font-style: h3;
+  background: var(--color-primary);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 1rem;
   align-items: center;
-  text-decoration: none;
 }
+
 .nav__list {
-width: 100%;
-margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .nav__item {
-  padding: 0.5rem 2rem;
-  font-weight: 600;
-  border-bottom: none;
+  padding: 0,5rem 2rem;
+  border-bottom: 0.5px solid var(--color-border);
 }
 
 .nav__item > a {
-  color: #d2d0db;
+  color: var(--color-border);
   transition: color 0.3s;
 }
 
 .nav__item > a:hover {
-  color: #fff;
+  color: var(--color-text-invert);
 }
+
 .nav__toggler {
   opacity: 0.5;
   transition: box-shadow .15s;
   cursor: pointer;
 }
+
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 0 3px #666;
+  box-shadow: 0 0 1 3px #666;
   border-radius: 5px;
 }
-
-.nav__brand{
-  transform: translateY(5px);
-  position: absolute;
-  left: -0,3rem;
+.nav__brand {
+margin-top: 5px;
+margin-bottom: 3px;
 }
-@media screen and (min-width:768px) {
+
+@media screen and (min-width: 768px) {
   .nav__toggler {
-      display: none;
+    display: none;
   }
+
   .nav__list {
-      width: auto;
-      display: flex;
-      font-size: 1.6rem;
-      max-height: 100%;
-      opacity: 1;
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
   }
+
   .nav__item {
-      border: 0;
+    border: 0;
+    margin: 10px;
   }
 }
 

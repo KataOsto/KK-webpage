@@ -14,12 +14,26 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="/"> <img src="/assets/logo/svg/logotype/Kreatorzy Krajaobrazu  logotype, kolor_white, size_50px.svg" alt=""></a>
-
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"> <img src="/assets/logo/svg/logotype/Kreatorzy Krajaobrazu  logotype, kolor_white, size_50px.svg" alt=""></a>
+          <svg class="icon icon--primary nav__toggler">
+            <use xlink:href="assets\icon\sprite.svg#menu"></use>
+          </svg>
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">O NAS</a></li>
+            <li class="nav__item"><a href="#">OFERTA</a></li>
+            <li class="nav__item"><a href="#">MISJA</a></li>
+            <li class="nav__item"><a href="#">PROJEKTY</a></li>
+            <li class="nav__item"><a href="#">KONTAKT</a></li>
+          </ul>
       </nav>
     </header>
 
+
+
+
+
+    
     <section class="hero">
       <div class="container grid grid--1x2">
         <heading class="block__header hero__content">
@@ -66,15 +80,16 @@
 
 
 
-<section class="contact">
+<section class=" block  ">
 
-<div class="media">
+<div class="media container">
   <div class="media__image"></div>
     <svg class="icon icon--primary">
       <use xlink:href=""></use>
     </svg>
   <div class="media__body">
-    <h4 class="madia__title">ETAP PRZYGOTOWAWCZY</h4>
+    <h4 class="block__header_left">o nas</h4>
+    <h2 class="madia__title">ETAP PRZYGOTOWAWCZY</h4>
     <p>Oferujemy kompleksowe usługi z zakresu architektury krajobrazu, w tym analizy krajobrazowe, inwentaryzacje dendrologiczne, opinie i ekspertyzy. Przygotowujemy operaty dendrologiczne oraz operaty pielęgnacyjne, a także wytyczne w zakresie ochrony drzew na etapie budowy. Zajmujemy się również projektami gospodarki drzewostanem, obejmującymi przygotowanie wniosków na wycinkę oraz projektami nasadzeń zamiennych.</p>
   </div>
 </div>
