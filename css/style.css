@@ -14,7 +14,7 @@ html {
   ustawiając 62,5% z 16px = 10px
   czyli 1rem to 10px*/
   font-size: 62.5%;
-  background: var(--color-body_light);
+  background: #fff;
 }
 
 :root {
