@@ -524,6 +524,16 @@ content: open-quote;
 }
 
 /*Card*/
+.card__space {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  align-self: stretch;
+}
+
+
 .card {
   display: grid;
   place-items: center;
