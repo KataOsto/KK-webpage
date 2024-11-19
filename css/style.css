@@ -1036,8 +1036,12 @@ border-radius: 5px;
   background: var(--color-primary);
 }
 
+.footer__list {
+  font-size: 16px;
+}
+
 .footer a {
-  color: #777;
+  color: #eee9e9;
   transition: color 0.3s;
 }
 
@@ -1055,6 +1059,7 @@ border-radius: 5px;
 
 }
 .footer__heading {
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -1068,8 +1073,8 @@ border-radius: 5px;
   max-width: 230px;
 }
 
-.footer_copyright {
-  font-size: 2.0rem;
+.footer__copyright {
+  font-size: 12px;
   color: #fff;
   opacity: .3;
 }
@@ -1090,12 +1095,12 @@ border-radius: 5px;
       margin-top: 1rem;
   }
   .footer__copyright {
-      font-size: 1rem;
+      font-size: 12px;
   }
   .footer__section {
       border: 0;
   }
  .footer__heading {
-    font-size: 2rem;
+    font-size: 20px;
  }
 }
