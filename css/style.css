@@ -9,15 +9,15 @@
   background: #fff;
   color: var(--color-tekst-primery);
 }
-
+/*
 html {
   /*standardowa wielkość w przeglądarce to 16px
   ustawiając 62,5% z 16px = 10px
-  czyli 1rem to 10px*/
+  czyli 1rem to 10px
   font-size: 62.5%;
   background: #fff;
 }
-
+*/
 :root {
   --color-primary: #26402d; /*brunswick green*/
   --color-secondary: #36553D; /*hunter green*/
@@ -805,9 +805,11 @@ content: open-quote;
 }
 
 .nav__item {
-  padding: 0.5rem 2rem;
+  padding: 0.3rem 1rem;
   border-bottom: 0.5px solid var(--color-border);
   font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.28rem;
 }
 
 .nav__item > a {
@@ -832,11 +834,12 @@ content: open-quote;
 }
 
 .nav__brand {
-  margin-top: 5px;
+ 
+  margin-top: 10px;
   margin-bottom: 3px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .nav__toggler {
     display: none;
   }
