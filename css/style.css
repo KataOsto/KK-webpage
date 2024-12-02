@@ -97,9 +97,9 @@ h4 {
 p {
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.105rem;
+  font-weight: 450;
+  line-height: 160%;
+  letter-spacing: 0.125rem;
   margin-top: 0;
 }
 
@@ -118,6 +118,7 @@ p {
   }
   p {
     font-size: 16px;
+    font-weight: 500;
   }
 }
 
@@ -378,7 +379,6 @@ padding-right: 6rem;
   .input {
     font-size: 1,5rem;
   }
-  
 }
 
 /*   Blocks   */
@@ -448,7 +448,6 @@ padding-right: 6rem;
   margin-top: 1rem;
   width: 50px;
   height: 50px;
-
 }
 
 /*  Quotes  */
@@ -553,23 +552,29 @@ content: open-quote;
 
 .card__title {
     position: absolute;
-    inset: auto auto 30px 30px;
-    margin: 6px;
+    inset: auto auto 20px 20px;
+    margin-bottom: 16px;
     transition: inset .3s .3s ease-out;
     font-weight: 600;
     text-transform: uppercase;
+
 }
 
 .card__description {
+
   position: absolute;
   opacity: 0;
   max-width: 90%;
   transition: opacity .3s ease-out;
-  inset: auto auto 80px 30px;
+  inset: auto auto 90px 30px;
+  font-size: 0.9rem;
+  line-height: 150%;
+  margin-right: 16px;
 }
 
 &:hover .card__title {
   inset: auto auto 220px 30px;
+  margin-bottom: 16px;
   transition: inset .3s ease-out;
 }
 
@@ -870,7 +875,9 @@ content: open-quote;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  margin-bottom: 26px;
+  margin-top: 26px;
+  width: 40%;
   }
 
 .mission__content {
