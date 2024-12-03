@@ -1,28 +1,28 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = [1, 1]; // Tablica dla indeksów slajdów
+let slideId = ["slideshow1", "slideshow2"]; // Tablica ID dla slajdów
+
+// Pokazuje pierwsze slajdy dla obu projektów
+showSlides(1, 0); 
+showSlides(1, 1); 
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, slideshowIndex) {
+    showSlides(slideIndex[slideshowIndex] += n, slideshowIndex);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// Funkcja do pokazywania slajdów
+function showSlides(n, slideshowIndex) {
+    let i;
+    let slides = document.querySelectorAll(`.mySlides[data-slideshow="${slideshowIndex + 1}"]`); // Wybiera odpowiednie slajdy
+    let dots = document.getElementsByClassName("dot"); // Jeżeli używasz kropek do nawigacji
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    if (n > slides.length) { slideIndex[slideshowIndex] = 1; }
+    if (n < 1) { slideIndex[slideshowIndex] = slides.length; }
+
+    // Ukrywa wszystkie slajdy
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    slides[slideIndex[slideshowIndex] - 1].style.display = "block"; // Wyświetl aktywny slajd
 }
