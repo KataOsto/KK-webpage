@@ -629,9 +629,6 @@ content: open-quote;
   text-align: left;
 }
 
-
-
-
 @media screen and (min-width: 768px) {
 
 }
@@ -686,7 +683,6 @@ content: open-quote;
 }
 
 /*  Slideshow */
-/* Slideshow container */
 
 .slideshow-container {
   max-width: 1000px;
@@ -700,13 +696,11 @@ content: open-quote;
   height: auto; /* Utrzymuj proporcje obrazka */
 }
 
-
-
-/* Hide the images by default */
+/* Hide the images by default 
 .mySlides {
   display: none;
 }
-
+*/
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
