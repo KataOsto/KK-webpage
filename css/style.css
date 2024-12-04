@@ -96,12 +96,13 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 450;
   line-height: 160%;
   letter-spacing: 0.125rem;
   margin-top: 0;
+text-align: justify;
 }
 
 .header__small_right {
@@ -149,6 +150,11 @@ p {
     font-weight: 500;
   }
 }
+
+article {
+  margin-top: 1px;
+}
+
 
 
 /*  Grid zawsze definiowaś siatki dla danego typu przy wyświetlaniu  */
@@ -595,10 +601,9 @@ content: open-quote;
   opacity: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 786px) {
   .card__space {
     display: flex;
-
     flex-direction: row;
     align-self: center;
     gap: 1.8rem;
@@ -609,7 +614,7 @@ content: open-quote;
 /*  Project - card  */
 
 .card__project {
-  display: flex;
+  display: block;
   width: 22.0625rem;
   height: 36.0625rem;
   justify-content: space-between;
@@ -622,6 +627,7 @@ content: open-quote;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 26px;
+  padding-top: 15px;
 }
 
 .project__paragraf {
@@ -633,7 +639,7 @@ content: open-quote;
   gap: 1rem;
   flex-shrink: 0;
   color: var(--color-tekst-primery);
-  margin-top: 1px;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
@@ -646,6 +652,7 @@ content: open-quote;
   text-transform: uppercase;
   line-height: normal;
   font-size: 0.8rem;
+  letter-spacing: 110%;
 }
 
 .project__content {
@@ -660,49 +667,49 @@ content: open-quote;
   color: var(--color-dark2);
   font-weight: 600;
   font-size: 0.5rem;
-  text-align: left;
 }
 
 @media screen and (min-width: 1024px) {
   .card__project {
-    display: flex;
-    width: 34.0625rem;
-    height: 55.0625rem;
+    display:block;
+    width: 28.0625rem;
+    height: 45.0625rem;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     flex-shrink: 0;
     flex-wrap: wrap;
-    border-radius: 32px;
+    border-radius: 30px;
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 26px;
+    padding-top: 15px;
   }
   .project__paragraf {
     display: flex;
-    width: 30.5rem;
+    width: 25.5rem;
     height: 15.75rem;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     flex-shrink: 0;
     color: var(--color-tekst-primery);
-    margin-top: 1px;
+    margin-top: 16px;
     margin-bottom: 16px;
   }
   .project__title {
-
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   
   .project__content {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 150%;
   }
   
   .projekt__city {
     font-size: 0.9rem;
+    padding-bottom: 16px;
   }
 }
 
@@ -1186,6 +1193,7 @@ border-radius: 5px;
   font-size: 12px;
   color: #fff;
   opacity: .3;
+  text-align: center;
 }
 
 @media screen and (min-width: 1050px) {
