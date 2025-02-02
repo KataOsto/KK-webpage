@@ -13,14 +13,14 @@ function plusSlides(n, slideshowIndex) {
 
 // Funkcja do pokazywania slajdów
 function showSlides(n, slideshowIndex) {
-    let i;
+    // let i;
     let slides = document.querySelectorAll(`.mySlides[data-slideshow="${slideshowIndex + 1}"]`); // Wybiera odpowiednie slajdy
 
     if (n > slides.length) { slideIndex[slideshowIndex] = 1; }
     if (n < 1) { slideIndex[slideshowIndex] = slides.length; }
 
     // Ukrywa wszystkie slajdy
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
 
