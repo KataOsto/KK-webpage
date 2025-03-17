@@ -1088,7 +1088,6 @@ content: open-quote;
   display: flex;
   height: 3.3125rem;
   flex-direction: column;
- 
 }
 
 .hero__tagline {
@@ -1135,11 +1134,17 @@ content: open-quote;
 
 
 /*    O NAS   */
+.heading__color_H400 {
+  color: var(--Primery-Colors-H400);
+}
+
+
+
 .onas__image {
-  width: 90%;
-  height: auto;
-  border-radius: 36px;
-  padding: 16px;
+  width: 25.875rem;
+  align-self: stretch;
+  border-radius: 1.75rem;
+  background: url(/assets/images/o_nas_image.jpg) lightgray 50% / cover no-repeat;
 }
 
 .onas__content {
