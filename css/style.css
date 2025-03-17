@@ -72,42 +72,105 @@ h1, h2, h3, h4 {
   margin-bottom: 1rem;
 }
 
-/*text mobile*/
+
+/*HEADINGS*/
 h1 {
-  font-size: 24px;
+  font-size: 3.5rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 125%;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  line-height: 125%; /* 4.375rem */
+  letter-spacing: 0.14rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%;
-  letter-spacing: 0.33rem;
+  line-height: 125%; /* 3.125rem */
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 125%;
-  letter-spacing: 0.135rem;
-  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 125%; /* 1.875rem */
+  letter-spacing: 0.03rem;
 }
 
 h4 {
-  font-size: 12px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%;
-  letter-spacing: 0.28rem;
+  line-height: 125%; /* 1.40625rem */
+  letter-spacing: 0.045rem;
   text-transform: uppercase;
-  padding-bottom: 10px;
+}
+
+h5 {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 1.09375rem */
+  letter-spacing: 0.035rem;
+}
+
+
+/*BODY*/
+.p1_r {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: 0.02rem;
+}
+
+.p1_b {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: 0.02rem;
+}
+
+.p2_r {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.0175rem;
+}
+
+.p2_b {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.0175rem;
+}
+
+.p3_r {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.125rem */
+  letter-spacing: 0.015rem;
+}
+
+.p3_b {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 1.125rem */
+  letter-spacing: 0.015rem;
 }
 
 p {
@@ -117,7 +180,7 @@ p {
   line-height: 160%;
   letter-spacing: 0.125rem;
   margin-top: 0;
-text-align: justify;
+  text-align: justify;
 }
 
 .header__small_right {
