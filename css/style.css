@@ -58,14 +58,17 @@ li::marker {
 }
 
 body {
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
-  color: var(--Neutral-N900);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1, h2, h3, h4 {
-  color: var(--colro-text-invert);
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: var(--Neutral-white);
   margin-bottom: 1rem;
 }
 
@@ -299,11 +302,11 @@ a {
 }
 
 .icon--primary {
-  fill: var(--Primery-Colors-H400);
+  fill: var(--Neutral-white);
 }
 
 .icon-container {
-  background: var(--colro-text-invert);
+  background: var(--Neutral-white);
   width: 64px;
   height: 64px;
   border-radius: 100%;
@@ -311,6 +314,39 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+
+/* ARROW icon */
+
+.arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem;
+
+}
+
+.arrow-secondary{
+  border-radius: 1.75rem;
+  background: var(--Neutral-white, #FFF);
+}
+
+
+.arrow-down {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.arrow-down img {
+  width: 100%;
+  height: 100%;
+}
+
 
 /*  Callapsibles  */
 .collapsible__header {
@@ -578,12 +614,12 @@ content: open-quote;
 }
 
 .card__title {
-    position: absolute;
-    inset: auto auto 20px 20px;
-    margin-bottom: 16px;
-    transition: inset .3s .3s ease-out;
-    font-weight: 600;
-    text-transform: uppercase;
+  position: absolute;
+  inset: auto auto 20px 20px;
+  margin-bottom: 16px;
+  transition: inset .3s .3s ease-out;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .card__description {
@@ -624,7 +660,6 @@ content: open-quote;
 
 
 /*  Project - card  */
-
 .card__project {
   display: block;
   width: 22.0625rem;
@@ -767,8 +802,8 @@ content: open-quote;
   }
 }
 
-/*  Slideshow */
 
+/*  Slideshow */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -943,7 +978,7 @@ content: open-quote;
 
 /*    HERO    */
 .hero {
-  background-image: url(/assets/images/image_hero.jpg);
+  background-image: url(/assets/images/hero_image.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -955,6 +990,16 @@ content: open-quote;
   height: 40rem;
 }
 
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 7.5625rem 8.5rem;
+
+}
+
 .hero__heading {
   font-size: 1.25rem;
   font-style: normal;
@@ -962,9 +1007,14 @@ content: open-quote;
   line-height: 125%;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
+  text-align: center;
   padding-top: 10.4375rem;
   padding-bottom: 2rem;
   justify-content: center;
+  display: flex;
+  height: 3.3125rem;
+  flex-direction: column;
+ 
 }
 
 .hero__tagline {
@@ -1008,9 +1058,6 @@ content: open-quote;
     font-size: 3.25rem;
   }
 }
-
-
-
 
 
 /*    O NAS   */
