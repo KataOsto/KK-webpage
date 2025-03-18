@@ -68,7 +68,7 @@ h1, h2, h3, h4 {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-  color: var(--Neutral-white);
+  color: var(--Neutral-N800);
   margin-bottom: 1rem;
 }
 
@@ -101,7 +101,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 125%; /* 1.40625rem */
@@ -110,7 +110,7 @@ h4 {
 }
 
 h5 {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 125%; /* 1.09375rem */
@@ -378,19 +378,25 @@ a {
   align-items: center;
 }
 
+.icon--heading {
+  display: flex;
+  width: 16.8625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 
 /* ARROW icon */
-
 .arrow {
   width: 1.5rem;
   height: 1.5rem;
-  
   display: flex;
   padding: 1rem;
   justify-content: center;
   align-items: flex-end;
   gap: 0.5rem;
-
 }
 
 .arrow-secondary{
@@ -508,6 +514,55 @@ padding-right: 6rem;
   }
 }
 
+/*  INFO  */
+.info-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.info {
+  display: block;
+  flex-direction: column; /* Układ kolumnowy */
+  align-items: flex-start; /* Wyrównanie do lewej */
+  width: 26rem;
+  gap: 0rem;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.info--content {
+  display: flex;
+  flex-direction: column; /* Ikona i nagłówek w kolumnie */
+  align-items: flex-start; /* Wyrównanie do lewej */
+  gap: 1rem; /* Odstęp między ikoną a nagłówkiem */
+}
+
+.info--icon {
+  width: 50px;
+  height: 50px;
+  padding-top: 0%;
+}
+
+.info--title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
+}
+
+.info--description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
 /*  Inputs  */
 .input {
   border-radius: 30px;
@@ -599,8 +654,8 @@ padding-right: 6rem;
 
 .media__body {
   margin:  0 2rem;
-
 }
+
 .media__icon {
   margin-right: 8px;
   width: 24px;
@@ -993,7 +1048,7 @@ content: open-quote;
   width: 100%;
   margin: 0;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .nav__item {
