@@ -1,20 +1,23 @@
-const gallery = document.querySelector('.gallery');
-const images = document.querySelectorAll('.gallery img');
-const arrowLeft = document.querySelector('.arrow-left');
-const arrowRight = document.querySelector('.arrow-right');
+// Obsługa image-gallery dla każdego projektu
+const projects = document.querySelectorAll('.project');
 
-let currentIndex = 0;
+projects.forEach(project => {
+    const galleryImages = project.querySelectorAll('.gallery img');
 
-arrowLeft.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateGallery();
+    galleryImages.forEach(image => {
+        image.addEventListener('click', () => {
+            console.log('Obrazek kliknięty:', image.src);
+        });
+    });
 });
 
-arrowRight.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateGallery();
-});
+// Obsługa read-more-btn dla każdego projektu
+projects.forEach(project => {
+    const readMoreBtn = project.querySelector('.read-more-btn');
+    const longText = project.querySelector('.long-text');
 
-function updateGallery() {
-    gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+    readMoreBtn.addEventListener('click', () => {
+        longText.classList.toggle('expanded');
+        readMoreBtn.textContent = longText.classList.contains('expanded') ? 'Czytaj mniej' : 'Czytaj więcej';
+    });
+});

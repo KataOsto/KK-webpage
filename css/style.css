@@ -70,6 +70,13 @@ h1, h2, h3, h4 {
   margin-bottom: 1rem;
 }
 
+.h1-h200, .h2-h200, .h3-h200, .h4-h200 {
+color: var(--Primery-Colors-H200);
+}
+
+.h1-h400, .h2-h400, .h3-h400, .h4-h400 {
+  color: var(--Primery-Colors-H400);
+  }
 
 
 /*    HEADINGS    */
@@ -282,6 +289,47 @@ p {
   font-weight: 600;
   line-height: 124%; /* 0.93rem */
   letter-spacing: 0.015rem;
+}
+
+.realizacje-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.realizacje-heading {
+  display: flex; /* Użyj flexboxa */
+  gap: 16px; /* Dodaj odstęp między elementami */
+}
+
+.realizacje-heading h1 {
+  margin: 0; /* Usuń domyślne marginesy */
+}
+
+.realizacje-heading-nasze {
+  color: #26402D;
+  font-size: 56px;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 70px;
+  letter-spacing: 2.24px;
+  word-wrap: break-word;
+}
+
+.realizacje-heading-realizacje {
+  color: #69806E;
+  font-size: 56px;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 70px;
+  letter-spacing: 2.24px;
+  word-wrap: break-word;
 }
 
 
@@ -580,78 +628,7 @@ content: open-quote;
 
 
 
-/*   Project - Card   */
-.project {
-  display: inline-flex;
-  padding: 1rem 1rem 1.5rem 1rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  border: 1px solid #ccc; /* Dodaję obramowanie, aby karta była widoczna */
-  width: 563px; /* Ustawiamy szerokość na 563px *
-  text-align: center; /* Dodaje wyrównanie tekstu do środka */
-  border-radius: 1.3125rem;
-}
 
-.project--heading {
-  align-self: stretch;
-  gap: 1rem;
-  margin: 0;
-}
-
-
-.project img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
-  border-radius: 1rem;
-}
-
-.image-gallery {
-  position: relative;
-  width: 100%;
-  overflow: hidden; /* Dodajemy ukrycie nadmiaru */
-  border-radius: 1rem;
-}
-
-
-.gallery {
-  display: flex; /* Ustawiamy flex dla galerii */
-  transition: transform 0.3s ease; /* Dodajemy animację */
-}
-
-.gallery img {
-  width: 100%; /* Obrazki na pełną szerokość galerii */
-  height: auto;
-}
-
-.arrows {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.arrow {
-  width: 2rem;
-  height: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* .arrow-svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(200deg) saturate(70%) brightness(110%); /* Ustawiamy domyślny kolor (niebieski) */
-}
-
-.arrow:hover .arrow-svg {
-  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(0deg) saturate(70%) brightness(110%); /* Ustawiamy kolor po najechaniu (czerwony) */
-} */
 
 
 /*  Callouts - kontakt  */
@@ -981,7 +958,7 @@ content: open-quote;
 }
 
 .btn--accent {
-  background: var(--color-accent);
+  background: var(--Primery-Colors-H300);
   color: #fff;
 }
 
@@ -990,8 +967,8 @@ content: open-quote;
 }
 
 .btn--stretched {
-padding-left: 6rem;
-padding-right: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .btn--block {
@@ -1378,7 +1355,152 @@ a {
 
 
 /* PROJECTS */
+/*   Project - Card   */
+.project--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 16px;
+}
 
+.project--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Tworzy 2 kolumny o równej szerokości */
+  grid-gap: 1rem; /* Ustawia odstęp między projektami */
+  row-gap: 1rem;
+}
+
+.project {
+  /* Style dla pojedynczego projektu */
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+/* Opcjonalnie: dostosowanie do mniejszych ekranów */
+@media (max-width: 768px) {
+  .project--grid {
+      grid-template-columns: 1fr; /* Na mniejszych ekranach projekty będą ułożone w jednej kolumnie */
+  }
+}
+
+.project {
+  display: flex;
+  padding: 1rem 1rem 1.5rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ccc; /* Dodaję obramowanie, aby karta była widoczna */
+  width: 563px; /* Ustawiamy szerokość na 563px */
+  border-radius: 1.3125rem;
+  transition: opacity 1.8s ease-in-out, transform 1.8s ease-in-out, display 1.8s ease-in-out;
+
+  /* Dodaj animację opacity i transformacji */
+}
+
+.read-more-btn {
+  display: flex; /* lub display: flex; */
+  flex-direction: column;
+  align-self: center; /* Centruje przycisk w poziomie */
+}
+
+
+@import 'animate.css';
+
+.project__hidden {
+  opacity: 0;
+  transform: scale(0.8); /* Zmniejsz skalę elementu */
+  display: none;
+}
+
+.long-text {
+  max-height: 100px; /* Ustawiamy maksymalną wysokość tekstu */
+  overflow: hidden; /* Ukrywamy nadmiar tekstu */
+  transition: max-height 0.3s ease; /* Dodajemy animację */
+}
+
+.long-text.expanded {
+  max-height: none; /* Usuwamy maksymalną wysokość po rozwinięciu */
+}
+
+.project--heading {
+  align-self: stretch;
+  gap: 1rem;
+  margin: 0;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+
+.image-gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Dodajemy ukrycie nadmiaru */
+  border-radius: 1rem;
+}
+
+.gallery {
+  display: flex; /* Ustawiamy flex dla galerii */
+  transition: transform 0.3s ease; /* Dodajemy animację */
+}
+
+.gallery img {
+  width: 100%; /* Obrazki na pełną szerokość galerii */
+  height: auto;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover .arrow-svg {
+  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(0deg) saturate(70%) brightness(110%); /* Ustawiamy kolor po najechaniu (czerwony) */
+} */
+
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
+  .project {
+      padding: 0.5rem; /* Zmniejszamy padding na mniejszych ekranach */
+  }
+
+  .arrows {
+      gap: 0.5rem; /* Zmniejszamy odstęp między strzałkami */
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+      width: 100%; /* Karta zajmuje całą szerokość ekranu na bardzo małych ekranach */
+  }
+
+  .arrow {
+      width: 1.5rem; /* Zmniejszamy rozmiar strzałek */
+      height: 1.5rem;
+  }
+
+  .arrow-svg {
+      width: 1rem; /* Zmniejszamy rozmiar ikon strzałek */
+      height: 1rem;
+  }
+}
 
 
 
