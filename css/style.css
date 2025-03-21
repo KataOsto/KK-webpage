@@ -428,32 +428,6 @@ p {
 
 
 
-/*   ARROW Icon   */
-.arrow {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  padding: 1rem;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 0.5rem;
-}
-
-.arrow-secondary{
-  border-radius: 1.75rem;
-  background: var(--Neutral-white, #FFF);
-}
-
-.arrow-down {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-
-.arrow-down img {
-  width: 100%;
-  height: 100%;
-}
 
 
 
@@ -607,106 +581,77 @@ content: open-quote;
 
 
 /*   Project - Card   */
-.card__project {
-  display: block;
-  width: 22.0625rem;
-  height: 36.0625rem;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  border-radius: 30px;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 26px;
-  padding-top: 15px;
-}
-
-.project__paragraf {
-  display: flex;
-  width: 19.5rem;
-  height: 15.75rem;
+.project {
+  display: inline-flex;
+  padding: 1rem 1rem 1.5rem 1rem;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  flex-shrink: 0;
-  color: var(--Neutral-N900);
-  margin-top: 16px;
-  margin-bottom: 16px;
+  gap: 0.5rem;
+  border: 1px solid #ccc; /* Dodaję obramowanie, aby karta była widoczna */
+  width: 563px; /* Ustawiamy szerokość na 563px *
+  text-align: center; /* Dodaje wyrównanie tekstu do środka */
+  border-radius: 1.3125rem;
 }
 
-.project__title {
+.project--heading {
   align-self: stretch;
-  inset: auto auto 20px 20px;
-  margin-bottom: 0;
-  margin-top: 0;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: normal;
-  font-size: 0.8rem;
-  letter-spacing: 110%;
-}
-
-.project__content {
-  text-align: justify;
-  font-size: 0.6rem;
-  line-height: 150%;
+  gap: 1rem;
   margin: 0;
 }
 
-.projekt__city {
-  text-transform: uppercase;
-  color: var(--Neutral-N800);
-  font-weight: 600;
-  font-size: 0.5rem;
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .card__project {
-    display:block;
-    width: 28.0625rem;
-    height: 45.0625rem;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 26px;
-    padding-top: 15px;
-  }
-  .project__paragraf {
-    display: flex;
-    width: 25.5rem;
-    height: 15.75rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    flex-shrink: 0;
-    color: var(--Neutral-N900);
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-  .project__title {
-    font-size: 1rem;
-  }
-  
-  .project__content {
-    font-size: 0.8rem;
-    line-height: 150%;
-  }
-  
-  .projekt__city {
-    font-size: 0.9rem;
-    padding-bottom: 16px;
-  }
+.image-gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Dodajemy ukrycie nadmiaru */
+  border-radius: 1rem;
 }
 
+
+.gallery {
+  display: flex; /* Ustawiamy flex dla galerii */
+  transition: transform 0.3s ease; /* Dodajemy animację */
+}
+
+.gallery img {
+  width: 100%; /* Obrazki na pełną szerokość galerii */
+  height: auto;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .arrow-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(200deg) saturate(70%) brightness(110%); /* Ustawiamy domyślny kolor (niebieski) */
+}
+
+.arrow:hover .arrow-svg {
+  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(0deg) saturate(70%) brightness(110%); /* Ustawiamy kolor po najechaniu (czerwony) */
+} */
 
 
 /*  Callouts - kontakt  */
@@ -1016,11 +961,14 @@ content: open-quote;
 
 .btn--primary {
   background: var(--Neutral-white);
-  color: var(--Primery-Colors-H300);
+  color: var(--Neutral-N900);
+  border: 1px solid var(--Neutral-N800, #363939);
 }
 
 .btn--primary:hover {
-  background: var(--Primery-Colors-H300);
+  background: var(--Neutral-white);
+  color: var(--Neutral-N400);
+  border: 1px solid var(--Neutral-N400, #363939);
 }
 
 .btn--secondary {
@@ -1492,8 +1440,8 @@ a {
   background: rgba(255, 255, 255, 0.16);
   box-shadow: 5px 10px 4.8px 0px rgba(0, 0, 0, 0.15);
   flex-direction: column;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
