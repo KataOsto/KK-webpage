@@ -78,6 +78,9 @@ color: var(--Primery-Colors-H200);
   color: var(--Primery-Colors-H400);
   }
 
+.h1-white, .h2-white, .h3-white, .h4-white {
+  color: var(--Neutral-white);
+  }
 
 /*    HEADINGS    */
 h1 {
@@ -299,6 +302,7 @@ p {
   justify-content: flex-end;
   align-items: flex-start;
   gap: 5px;
+  word-wrap: break-word
 }
 
 .realizacje-heading {
@@ -1367,8 +1371,8 @@ a {
 .project--grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Tworzy 2 kolumny o równej szerokości */
-  grid-gap: 1rem; /* Ustawia odstęp między projektami */
-  row-gap: 1rem;
+  grid-gap: 2rem; /* Ustawia odstęp między projektami */
+  row-gap: 2rem;
 }
 
 .project {
