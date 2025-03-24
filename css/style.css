@@ -65,9 +65,9 @@ body {
 h1, h2, h3, h4 {
   /* height: 100%; */
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
+  line-height: 1;
   color: var(--Neutral-N800);
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .h1-h200, .h2-h200, .h3-h200, .h4-h200 {
@@ -87,7 +87,7 @@ h1 {
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 4.375rem */
+  line-height: 100%; /* 4.375rem */
   letter-spacing: 0.14rem;
   text-transform: uppercase;
 }
@@ -1332,6 +1332,105 @@ a {
 }
 
 /* WHERE */
+
+
+
+
+
+
+.projektujemy-obszary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.3125rem;
+  line-height: 125%;
+  align-self: stretch;
+}
+
+.projektujemy-obszary-tekst {
+  line-height: 70px;
+  letter-spacing: 2.24px;
+  word-wrap: break-word;
+}
+
+.where-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr)); /* Dostosuj szerokość kart */
+  gap: 1rem; /* Dostosuj odstęp między kartami */
+}
+
+
+
+
+.where-card {
+  display: flex;
+  width: 16.5rem;
+  height: 37.5rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1.75rem;
+  background: linear-gradient(0deg, rgba(17, 174, 41, 0.20) 0%, rgba(17, 174, 41, 0.20) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.56) 87.5%);
+  background-blend-mode: hue, darken, normal;
+  box-shadow: 5px 6px 6.1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.where-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.where-card-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+
+}
+
+.where-card-heading h3 {
+  color: var(--Neutral-white, #FFF);
+}
+
+
+.where-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  color: var(--Neutral-white, #FFF);
+}
+
+
+@media (max-width: 1024px) { /* Dostosuj szerokość, jeśli to konieczne */
+  .where-card {
+    flex-direction: row; /* Zmień kierunek flex na poziomy */
+    width: 100%; /* Ustaw szerokość na 100% ekranu */
+    height: auto; /* Dostosuj wysokość do zawartości */
+  }
+
+  .where-card-heading {
+    width: 50%; /* Ustaw szerokość nagłówka na 50% */
+  }
+
+  .where-card-content {
+    width: 50%; /* Ustaw szerokość zawartości na 50% */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
