@@ -43,8 +43,8 @@
             <li class="nav__item"><a href="#about">O nas</a></li>
             <li class="nav__item"><a href="#offer">Oferta</a></li>
             <li class="nav__item"><a href="#mission">Misja</a></li>
-            <li class="nav__item"><a href="#projekts">Projekty</a></li>
-            <button class="btn btn--primery">Kontakt</button>
+            <li class="nav__item"><a href="#projekt">Projekty</a></li>
+            <button class="btn btn--primary" id="#contact">Kontakt</button>
           </ul>
         </nav>
       </header>
@@ -66,14 +66,15 @@
 
 
     <!-- ABOUT-->
-    <section class="block container">
+    <section class="block container" id="about">
       <header class="block__header onas">
         <h4 class="header__small_right heading__color_H400">O nas</h4>
-        <div class="realizacje-heading">
-          <div style="width: 100%"><span style="color: #26402D; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word">Profesjonalizm i doświadczenie <br/>w </span><span style="color: #69806E; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word">zazielenianiu</span><span style="color: #26402D; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word"> przestrzeni</span></div>
+        <div class="about-heading">
+          <div style="width: 100%"><span style="color: #0a0a0a; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word">Profesjonalizm i doświadczenie <br/>w </span><span style="color: #69806E; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word">zazielenianiu</span><span style="color: #26402D; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word"> przestrzeni</span></div>
         </div>
       </header>
         <article>
+
           <p class="p1_r">
             Jesteśmy zespołem architektów krajobrazu, których pasją jest zieleń –
             zarówno projektowanie jak i ochrona istniejących zadrzewień.
@@ -99,6 +100,7 @@
 
       <div class="media onas__content">
         <div class="media__body">
+          
           <h4 class="madia__title">Funkcjonalność <br>
             i estetyka</h4>
           <p class="p2_r">
@@ -172,7 +174,7 @@
 
 
     <!-- OFFER-->
-    <section class="block  block--dark">
+    <section class="block  block--dark" id="offer">
       <header class="container block__header onas">
         <h4 class="header__small_right heading__white ">Nasza oferta</h4>
         <div class="inwestycje-container" data-size="M">
@@ -227,7 +229,7 @@
           <div>
             <img
               class="offer__image"
-              src="/assets/images/nasze_image.png"
+              src="/assets/images/offer_image.jpeg"
               alt=""
               />
             </div> 
@@ -251,7 +253,7 @@
       <div class="container">
           <div class="where-cards-grid">
 
-            <article class="where-card" data-size="M" style="background-image: url(/assets/images/komunikacyjne.png); background-size: cover; background-repeat: no-repeat;">
+            <article class="where-card" data-size="M" style="background-image: url(/assets/images/communication_image.jpg); background-size: cover; background-repeat: no-repeat;">
               <div class="where-card-heading">
                   <h3>Inwestycje <br>komunikacyjne</h3>
               </div>
@@ -260,8 +262,8 @@
               </div>
             </article>
       
-      
-            <article class="where-card" data-size="M" style="background-image: url(/assets/images/miejskie.jpg); background-size: cover; background-repeat: no-repeat;">
+                
+            <article class="where-card" data-size="M" style="background-image: url(/assets/images/city_image.jpg); background-size: cover; background-repeat: no-repeat;">
               <div class="where-card-heading">
                   <h3>Przestrzenie <br>miejskie</h3>
               </div>
@@ -271,7 +273,7 @@
             </article>
         
         
-            <article class="where-card" data-size="M" style="background-image: url(/assets/images/osiedlowe.png); background-size: cover; background-repeat: no-repeat;">
+            <article class="where-card" data-size="M" style="background-image: url(/assets/images/estate_image.jpg); background-size: cover; background-repeat: no-repeat;">
               <div class="where-card-heading">
                   <h3>Tereny <br>osiedlowe</h3>
               </div>
@@ -281,7 +283,7 @@
             </article>
       
       
-            <article class="where-card" data-size="M" style="background-image: url(/assets/images/Obiekty.png); background-size: cover; background-repeat: no-repeat;">
+            <article class="where-card" data-size="M" style="background-image: url(/assets/images/public_image.jpg); background-size: cover; background-repeat: no-repeat;">
               <div class="where-card-heading">
                   <h3>Obiekty komercyjne i użyteczności publicznej</h3>
               </div>
@@ -297,7 +299,7 @@
 
 
     <!-- MISSION-->
-    <section class="block block--brand">
+    <section class="block block--brand" id="mission">
       <header class="container block__header mission">
         <h4 class="heading__white">Nasza misja</h4>
         <div class="grid grid--1x2">
@@ -319,7 +321,7 @@
 
 
     <!-- PROJECTS-->
-    <section class="block ">
+    <section class="block" id="projekt">
       <header class="container block__header">
           <h4 class="header__small_right">Nasze Realizacje</h4>
           <div class="realizacje-container" data-size="M">
@@ -594,18 +596,18 @@
           <div class="tags__carousel">
               <div class="tag">#architekturakrajobrazu</div>
               <div class="tag">#zieleńmiejska</div>
-              <div class="tag">zrównoważonyrozwój</div>
+              <div class="tag">#zrównoważonyrozwój</div>
               <div class="tag">#przestrzeńpubliczna</div>
-              <div class="tag">#ogrodyMiejskie</div>
-              <div class="tag">#zieloneDachy</div>
+              <div class="tag">#ogrodymiejskie</div>
+              <div class="tag">#zielonedachy</div>
               <div class="tag">#dendrologia</div>
               <div class="tag">#rewitalizacjaprzestrzeni</div>
-              <div class="tag">#roślinyOzdobne</div>
+              <div class="tag">#roślinyozdobne</div>
               <div class="tag">#landscapedesign</div>
               <div class="tag">#architecture</div>
               <div class="tag">#design</div>
               <div class="tag">#krajobraz</div>
-              <div class="tag">przestrzeńpubliczna</div>
+              <div class="tag">#przestrzeńpubliczna</div>
               <div class="tag">#roślinywodne</div>
               <div class="tag">#przesadzanie</div>
               <div class="tag">#ochronaroślin</div>
@@ -623,7 +625,7 @@
 
 
     <!-- CONTACT-->
-  <section class="block block--dark contact">
+  <section class="block block--dark contact" id="contact">
       <div class="container grid grid--1x2">
         <div class="contact__header">
           <h2 class="block__heading">GOTOWY NA WSPÓŁPRACĘ?</h2>
@@ -636,13 +638,13 @@
         </div>
         <div class="form--area">
           <div class="wrapper">
-            <form action="/submit-form" method="post">
+            <form action="send_email.php" method="post">
               <input type="text" id="name" name="name" placeholder="Imię..." required />
               <input type="text" id="surname" name="surname" placeholder="Nazwisko..." required />
               <input type="email" id="email" name="email" placeholder="Email" required />
               <textarea id="message" name="message" placeholder="Napisz do nas..." rows="10" required></textarea>
               <br>
-                <button type="submit" class="btn btn--primary contact--btn" type="submit">Wyślij wiadomość</button>
+                <button type="submit" class="btn btn--primary contact--btn">Wyślij wiadomość</button>
             </form>
           </div>
         </div>
@@ -690,11 +692,9 @@
               <br />
               <li class="p2_r">
                 TELEFON <br />tel. +48 507 740 103<br />tel. +48 608 641 719
-              </li>
-              <br />
+              </li> <br>
               <li class="p2_r">
-                Sąd Rejonowy Gdańsk Północ <br />w Gdańsku VII Wydział
-                Gospodarczy <br />KRS 0001073934.
+                EMAIL <br />biuro@kreatorzykrajobrazu.pl
               </li>
             </ul>
           </div>
@@ -708,15 +708,15 @@
           </div>
           <div class="collapsible__content">
             <ul class="list">
-              <li class="p2_b"><a href="#">O NAS</a></li>
+              <li class="p2_b"><a href="#about">O NAS</a></li>
               <br />
-              <li class="p2_b"><a href="#">OFERTA</a></li>
+              <li class="p2_b"><a href="#offer">OFERTA</a></li>
               <br />
-              <li class="p2_b"><a href="#">MISJA</a></li>
+              <li class="p2_b"><a href="#mission">MISJA</a></li>
               <br />
-              <li class="p2_b"><a href="#">PROJEKTY</a></li>
+              <li class="p2_b"><a href="#projekt">PROJEKTY</a></li>
               <br />
-              <li class="p2_b"><a href="#">KONTAKT</a></li>
+              <li class="p2_b"><a href="#contact">KONTAKT</a></li>
             </ul>
           </div>
         </section>
