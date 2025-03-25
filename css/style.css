@@ -165,6 +165,12 @@ h5 {
 
 /*    BODY    */
 
+p {
+  text-align: justify;
+}
+
+
+
 .p1_r {
   font-family: Inter;
   font-size: 18px;
@@ -289,6 +295,11 @@ h5 {
 .grid {
   display: grid;
 }
+
+.grid--1x3 {
+  grid-template-rows: auto;
+}
+
 
 .grid__container {
   display: grid;
@@ -660,13 +671,14 @@ h5 {
 .btn--primary {
   background: var(--Neutral-white);
   color: var(--Neutral-N900);
+  border-color: var(--Neutral-N600);
 
 }
 
 .btn--primary:hover {
   background: var(--Neutral-white);
   color: var(--Neutral-N400);
-
+  border-color: var(--Neutral-N600);
 }
 
 .btn--secondary {
@@ -784,6 +796,12 @@ a {
 .nav__item {
   padding: 0.5rem 2rem;
   border-bottom: 1px solid var(--Neutral-white);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 124%; /* 1.24rem */
+  letter-spacing: 0.02rem;
 }
 
 .nav__item:last-of-type {
@@ -858,11 +876,11 @@ a {
 }
 
 .hero__heading {
-  font-size: 1.25rem;
+  font-size: 3.5rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 125%;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.14rem;
   text-transform: uppercase;
   text-align: center;
   padding-top: 10.4375rem;
@@ -905,7 +923,7 @@ a {
   }
   .btn {
     display: flex;
-    width: 14.3125rem;
+    width: 10rem;
     padding: 0.75rem 1.5rem;
     justify-content: center;
     align-items: center;
@@ -923,27 +941,29 @@ a {
 
 /*   ABOUT   */
 
-.realizacje-container {
+.title-container {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 5px;
-  word-wrap: break-word
+  word-wrap: break-word;
+  margin-bottom: 24px;
 }
 
-.about-heading {
-  display: flex; /* Użyj flexboxa */
-  gap: 16px; /* Dodaj odstęp między elementami */
+.title--heading {
+  display: flex;
+  gap: 24px;
+
 }
 
-.realizacje-heading h1 {
+.title--heading h1 {
   margin: 0; /* Usuń domyślne marginesy */
 }
 
-.realizacje-heading-nasze {
+.title--heading-nasze {
   color: var(--Neutral-N500);
   font-size: 56px;
   font-family: Montserrat;
@@ -954,7 +974,7 @@ a {
   word-wrap: break-word;
 }
 
-.realizacje-heading-realizacje {
+.title--heading-realizacje {
   color: var(--Primery-Colors-H100);
   font-size: 56px;
   font-family: Montserrat;
@@ -1086,12 +1106,9 @@ a {
 }
 
 .offer__image {
-  flex: 1 0 0;
-  width: 616px;
-  height: fit-content;
-  margin: 0 auto;
-  background-size: cover;
-  overflow: hidden;
+  width: 100%; 
+  height: auto; 
+ 
   border-radius: 28px;
 }
 
@@ -1411,6 +1428,8 @@ a {
   border-radius: 0.9375rem;
   background: rgba(255, 255, 255, 0.16);
   box-shadow: 5px 10px 4.8px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .wrapper {
