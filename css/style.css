@@ -1370,26 +1370,32 @@ a {
 
 .tags__carousel {
   display: flex;
-  gap: 10px;
-  padding: 20px;
-  overflow-x: hidden; /* Ukrywamy standardowy pasek przewijania */
+  overflow: hidden;
   white-space: nowrap;
-  position: relative; /* Ustawiamy pozycję na relative, aby animacja działała poprawnie */
+  cursor: pointer;
+  scrollbar-width: none; /* Firefox */
+}
+
+.tags__carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .tag {
-  display: inline-flex;
-  height: 3rem;
-  padding: 0 1.5rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2rem;
-  border: 1px solid var(--Neutral-N400);
-  color: var(--Neutral-white);
-  font-size: 1rem;
-  white-space: nowrap;
-  margin: 0 5px;
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  margin-right: 12px;
+  background-color: #7cae7a; /* dopasowana zieleń */
+  color: white;              /* biały tekst dla czytelności */
+  border-radius: 20px;
+  font-size: 14px;
+  user-select: none;
+  transition: background-color 0.3s ease;
 }
+
+.tag:hover {
+  background-color: #63915f; /* lekko ciemniejsza zieleń na hover */
+}
+
 
 
 
