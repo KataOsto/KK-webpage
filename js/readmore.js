@@ -1,5 +1,5 @@
 // // Obsługa read-more-btn dla każdego projektu
-// projects.forEach(project => {
+//  projects.forEach(project => {
 //     const readMoreBtn = project.querySelector('.read-more-btn');
 //     const longText = project.querySelector('.long-text');
 

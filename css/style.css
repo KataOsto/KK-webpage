@@ -1261,10 +1261,10 @@ a {
   transition: opacity 1.8s ease-in-out, transform 1.8s ease-in-out, display 1.8s ease-in-out;
 }
 
-.read-more-btn {
-  display: flex;
-  flex-direction: column;
-  align-self: center; /* Centruje przycisk w poziomie */
+.project .read-more-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @import 'animate.css';
