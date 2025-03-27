@@ -1102,9 +1102,9 @@ a {
 
 
 
-/*   OFFER   */
+/*   OFFER   *//*   OFFER   *//*   OFFER   *//*   OFFER   *//*   OFFER   */
 
-.heading__white {
+/* .heading__white {
   color: var(--Neutral-white);
 }
 
@@ -1127,8 +1127,82 @@ a {
   height: auto; 
  
   border-radius: 28px;
+} */
+.heading__white {
+  color: var(--Neutral-white);
 }
 
+.offer--content {
+  display: flex;
+  color: var(--Neutral-white);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex: 1 0 0;
+  padding: 1rem; /* Dodajemy padding, aby tekst nie przylegał do krawędzi */
+}
+
+.offer--content p.p1_b {
+  font-size: 1.1rem; /* Zwiększamy rozmiar czcionki */
+  line-height: 1.6; /* Zwiększamy odstęp między wierszami */
+  margin-bottom: 1.5rem; /* Dodajemy margines dolny */
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container .media__body {
+  margin-bottom: 2rem; /* Dodajemy margines dolny między blokami tekstowymi */
+}
+
+.main-container .madia__title {
+  display: flex; /* Ustawiamy flexbox, aby wyrównać ikonę i tekst */
+  align-items: center; /* Wyrównujemy elementy w pionie */
+  gap: 0.5rem; /* Dodajemy odstęp między ikoną a tekstem */
+  font-size: 1.3rem; /* Zwiększamy rozmiar czcionki nagłówka */
+  margin-bottom: 1rem; /* Dodajemy margines dolny */
+}
+
+.main-container .p2_r {
+  font-size: 1rem; /* Ustawiamy rozmiar czcionki paragrafu */
+  line-height: 1.6; /* Zwiększamy odstęp między wierszami */
+}
+
+.offer__image-container {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.offer__image {
+  width: 100%; /* Obraz wypełnia 100% szerokości kontenera */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+.offer--content .icon {
+  width: 1.5rem; /* Dostosowujemy rozmiar ikony */
+  height: 1.5rem; /* Dostosowujemy rozmiar ikony */
+}
+
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
+  .offer--content {
+      padding: 0.5rem; /* Zmniejszamy padding na mniejszych ekranach */
+  }
+
+  .offer--content p.p1_b,
+  .main-container .p2_r {
+      font-size: 1rem; /* Zmniejszamy rozmiar czcionki na mniejszych ekranach */
+  }
+
+  .main-container .madia__title {
+      font-size: 1.1rem; /* Zmniejszamy rozmiar czcionki nagłówka na mniejszych ekranach */
+  }
+}
 
 
 /*   WHERE   *//*   WHERE   *//*   WHERE   *//*   WHERE   *//*   WHERE   */
