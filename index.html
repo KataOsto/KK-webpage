@@ -21,8 +21,8 @@
 
   <body>
 
-    <!-- NAVBAR -->
-    <div class="hero-container">
+<!-- NAVBAR -->
+  <div class="hero-container">
       <header>
         <nav class="container nav collapsible">
           <a class="nav__brand" href="/">
@@ -42,102 +42,110 @@
             <li class="nav__item"><a href="#offer">Oferta</a></li>
             <li class="nav__item"><a href="#mission">Misja</a></li>
             <li class="nav__item"><a href="#projekt">Projekty</a></li>
-            <button class="btn btn--primary" id="#contact">Kontakt</button>
+            <li class="nav__item">
+              <a href="#contact" class="btn btn--primary">Kontakt</a>
+          </li>
           </ul>
         </nav>
       </header>
 
-      <!-- HERO -->
-      <section class="block hero">
-        <div class="container grid">
-          <div class="hero__content">
-            <header class="block__header">
+<!-- HERO -->
+<section class="block hero">
+  <div class="container grid">
+      <div class="hero__content">
+          <header class="block__header">
               <h1 class="block__heading hero__heading"> Kreatywna zieleń <br />dla Twojej inwestycji</h1>
-            </header>
-            <div class="arrow arrow-secondary arrow-down">
-              <img src="/assets/icon/arrow-down.svg" alt="Arrow Down" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+          </header>
+          <a href="#about" class="arrow arrow-circel">
+              <img src="/assets/icon/arrow_circle.svg" alt="Arrow Circel" />
+          </a>
+      </div>
+  </div>
+</section>
+  </div>
 
-    <!-- ABOUT-->
-    <section class="block container" id="about">
-      <header class="block__header onas">
-        <h4 class="header__small_right heading__color_H400">O nas</h4>
-        <div class="about-heading">
-          <div style="width: 100%"><span style="color: #0a0a0a; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word">Profesjonalizm i doświadczenie <br/>w </span><span style="color: #69806E; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word">zazielenianiu</span><span style="color: #0a0a0a; font-size: 56px; font-family: Montserrat; font-weight: 600; text-transform: uppercase; line-height: 70px; letter-spacing: 2.24px; word-wrap: break-word"> przestrzeni</span></div>
+<!-- ABOUT-->
+  <section class="block container" id="about">
+      <header class="block__header about">
+        <h4 class="header__small_right">GDZIE PROJEKTUJEMY</h4>
+      <div class="title-container" data-size="M">
+          <span class="title--heading">
+            <h1 class="">Profesjonalizm i doświadczenie w <span class="h1-h200">zazielenianiu przestrzeni</span></h1>
+          </span>
         </div>
       </header>
         
-      <article>
-          <p class="p1_r">
-            Jesteśmy zespołem architektów krajobrazu, których pasją jest zieleń –
-            zarówno projektowanie jak i ochrona istniejących zadrzewień.
-          </p>
-          <p class="p1_r">
-            Dzięki wieloletniemu doświadczeniu i dbałości o detale tworzymy
-            przestrzenie, które harmonijnie łączą funkcjonalność z estetyką,
-            zachowując jednocześnie cenne wartości przyrodnicze. Współpracujemy z
-            biurami projektowymi, instytucjami publicznymi i inwestorami
-            prywatnymi, zapewniając fachową wiedzę oraz solidne dokumentacje.
-          </p>
-       </article>
-
-      <div class="grid grid--1x3">
-        <div>
+      <div class="grid grid--1x2">
+        <div class="about--image-content">
           <img
-            class="onas__image"
+            class="about__image"
             src="/assets/images/o_nas_image.jpg"
             alt=""
           />
-       </div>
-
-      <div class="media onas__content">
-        <div class="media__body">
-          
-          <h4 class="madia__title">Funkcjonalność <br>
-            i estetyka</h4>
-          <p class="p2_r">
-            Projektujemy przestrzenie łączące piękno 
-            i praktyczność, dostosowane do potrzeb użytkowników.            
-          </p>
         </div>
 
-        <div class="media__body">
-          <h4 class="madia__title">Ekonomia <br>
-            i trwałość</h4>
-          <p class="p2_r">
-            Tworzymy rozwiązania opłacalne i łatwe 
-            w utrzymaniu, przynoszące długoterminowe korzyści.
-          </p>
+        <div class="about-content">
+          <article>
+            <p class="p2_r" style="text-align: justify;">
+              Jesteśmy zespołem architektów krajobrazu, których pasją jest zieleń –
+              zarówno projektowanie jak i ochrona istniejących zadrzewień.
+            </p>
+            <p class="p2_r" style="text-align: justify;">
+              Dzięki wieloletniemu doświadczeniu i dbałości o detale tworzymy
+              przestrzenie, które harmonijnie łączą funkcjonalność z estetyką,
+              zachowując jednocześnie cenne wartości przyrodnicze. Współpracujemy z
+              biurami projektowymi, instytucjami publicznymi i inwestorami
+              prywatnymi, zapewniając fachową wiedzę oraz solidne dokumentacje.
+            </p>
+         </article>
+
+         <div class="about-content-media media-grid">
+          <div class="media about__content">
+            <div class="media__body">
+              <img src="/assets/icon/star.svg" alt="Ikona Funkcjonalność i estetyka" class="media__icon" />
+              <h4 class="madia__title">Funkcjonalność <br>
+                  i estetyka</h4>
+              <p class="p2_r">
+                  Projektujemy przestrzenie łączące piękno
+                  i praktyczność, dostosowane do potrzeb użytkowników.
+              </p>
+          </div>
+        </div>
+          <div class="media about__content">
+            <div class="media__body">
+              <img src="/assets/icon/shield.svg" alt="Ikona Funkcjonalność i estetyka" class="media__icon" />
+              <h4 class="madia__title">Ekonomia <br>i trwałość</h4>
+              <p class="p2_r">
+                Tworzymy rozwiązania opłacalne i łatwe 
+                w utrzymaniu, przynoszące długoterminowe korzyści.
+              </p>
+          </div>
+        </div>
+          <div class="media about__content">
+            <div class="media__body">
+              <img src="/assets/icon/heart.svg" alt="Ikona Funkcjonalność i estetyka" class="media__icon" />
+              <h4 class="madia__title">Społeczna <br>odpowiedzialność</h4>
+              <p class="p2_r">
+                Projektujemy miejsca sprzyjające integracji, dostępne dla wszystkich i wspierające zdrowy styl życia.
+              </p>
+          </div>
+        </div>
+          <div class="media about__content">
+            <div class="media__body">
+              <img src="/assets/icon/globe.svg" alt="Ikona Funkcjonalność i estetyka" class="media__icon" />
+              <h4 class="madia__title">Zrównoważony <br>rozwój</h4>
+              <p class="p2_r">
+                Dbamy o środowisko, minimalizując wpływ inwestycji na otoczenie i promując zachowanie naturalnych ekosystemów.
+              </p>
+          </div>
         </div>
       </div>
-
-      <div class="media onas__content">
-        <div class="media__body">
-          <h4 class="madia__title">Społeczna<br>
-            odpowiedzialność</h4>
-          <p class="p2_r">
-            Projektujemy miejsca sprzyjające integracji, dostępne dla wszystkich i wspierające zdrowy styl życia.
-          </p>
-        </div>
-
-        <div class="media__body">
-          <h4 class="madia__title">
-            Zrównoważony rozwój i ochrona br
-            bioróżnorodności 
-          </h4>
-          <p class="p2_r">
-            Dbamy o środowisko, minimalizując wpływ inwestycji na otoczenie i promując zachowanie naturalnych ekosystemów.
-          </p>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- NUMBERS-->
-    <section class="block block--brand">
+<!-- NUMBERS-->
+  <section class="block block--brand" id="numbers">
       <header class="container block__header numbers">
         <h4 class="heading__white">My w liczbach</h4>
 
@@ -165,22 +173,21 @@
 
         </div>
       </header>
-    </section>
+  </section>
 
-    <!-- OFFER-->
-    <section class="block  block--dark" id="offer">
-      <header class="container block__header onas">
+<!-- OFFER-->
+  <section class="block  block--dark" id="offer">
+      <header class="container block__header offer">
         <h4 class="header__small_right heading__white ">Nasza oferta</h4>
         <div class="inwestycje-container" data-size="M">
           <div class="title--heading">
-              <h1 class="h1-h200">Zielone</h1>
-              <h1 class="h1-white">Inwestycje</h1>
+              <h1 class="h1-h200">Zielone <span class="h1-white">Inwestycje</span></h1>
           </div>
         </div>
       </header>
 
       <div class="container">
-        <p class="p1_b">
+        <p class="p2_b">
           Specjalizujemy się w kompleksowej obsłudze zieleni w ramach inwestycji, łącząc wiedzę ekspercką z praktycznym podejściem do planowania. Nasza praca obejmuje zarówno analizę i inwentaryzację istniejącej roślinności, jak i projektowanie nowych terenów zieleni.
         </p>
 
@@ -194,7 +201,7 @@
                     class="icon"
                   />ETAP PRZYGOTOWAWCZY
                 </h3>
-              <p class="p2_r">
+              <p class="p3_r">
                 Oferujemy kompleksowe usługi z zakresu architektury krajobrazu, w tym analizy krajobrazowe, inwentaryzacje dendrologiczne, opinie i ekspertyzy. Przygotowujemy operaty dendrologiczne oraz operaty pielęgnacyjne, a także wytyczne w zakresie ochrony drzew na etapie budowy. Zajmujemy się również projektami gospodarki drzewostanem, obejmującymi przygotowanie wniosków na wycinkę oraz projektami nasadzeń zamiennych.
               </p>
             </div>
@@ -203,7 +210,7 @@
             <h3 class="madia__title heading__white ">
               <img
                 src="assets/icon/icon_conversion.svg" alt="Ikona znaku" class="icon"/>ETAP PROJEKTOWY</h3>
-            <p class="p2_r">
+            <p class="p3_r">
               Oferujemy projekty nowych założeń zieleni, a także rozbudowy, rewitalizacje 
               i modernizacje istniejących przestrzeni. Współpracujemy z branżystami: architektami, urbanistami, konstruktorami, projektantami drogowymi i sieciowymi – w razie potrzeby dysponujemy własną bazą specjalistów chętnych do współpracy projektowej. 
               Ponadto zajmujemy się procedurami formalno-prawnymi związanymi z uzgodnieniami projektowymi oraz uzyskiwaniem decyzji administracyjnych.
@@ -213,13 +220,13 @@
           <div class="media__body">
             <h3 class="madia__title heading__white ">
               <img src="assets/icon/icon_tree.svg" alt="Ikona znaku" class="icon"/> ETAP REALIZACJI</h3>
-            <p class="p2_r">
+            <p class="p3_r">
               Oferujemy nadzory autorskie oraz nadzory inspektorskie. Posiadamy uprawnienia Inspektora Nadzoru Terenów Zieleni oraz Certyfikowanego Inspektora Drzew.
             </p>
           </div>
         </div>
 
-        <div class="grid grid--1x3">
+        <div class="grid ">
           <div>
             <img
               class="offer__image"
@@ -229,15 +236,15 @@
             </div> 
         </div>
       </div>
-    </section>
+  </section>
 
-    <!-- WHERE-->
-    <section class="block">
+<!-- WHERE-->
+  <section class="block" id="where">
       <header class="container where">
         <h4 class="header__small_right">GDZIE PROJEKTUJEMY</h4>
         <div class="title-container" data-size="M">
           <span class="title--heading">
-            <h1 class="h1-h400">Działamy w różnych obszarach inwestycyjnych</h1>
+            <h1 >Działamy w <span class="h1-h200">różnych obszarach</span> inwestycyjnych </h1>
           </span>
         </div>
       </header>
@@ -290,7 +297,7 @@
           </div>
         </div>
       </div>
-    </section>
+  </section>
 
 <!-- MISSION-->
   <section class="block block--brand" id="mission">
@@ -303,7 +310,7 @@
           <div class="media mission__content">
             <div class="media__body">
               <h2 class="madia__title heading__white">TWORZYMY Z PASJĄ</h2>
-              <p class="p1_b">
+              <p class="p2_r">
                 Naszą pasją jest kreowanie nowych, bujnych krajobrazów, przyjaznych ludziom, sprzyjających zachowaniu bioróżnorodności a jednocześnie funkcjonalnych i atrakcyjnych. Wprowadzamy innowacyjne rozwiązania i walczymy o każdy skrawek zieleni, aby harmonijnie łączyć naturę z przestrzenią zabudowaną.
               </p>
             </div>
@@ -318,8 +325,7 @@
         <h4 class="header__small_right">Nasze Realizacje</h4>
         <div class="title-container" data-size="M">
           <div class="title--heading">
-            <h1 class="h1-h400">Nasze</h1>
-            <h1 class="h1-h200">Realizacje</h1>
+            <h1 class="">Nasze <span class="h1-h200">Realizacje</span></h1>
           </div>
         </div>
       </header>
@@ -911,7 +917,7 @@
   </section>
 
 <!-- TAGS-->
-  <section class="block--brand">
+  <section class="block--brand" id="tag">
     <div class="tags">
         <div class="tags__carousel">
             <div class="tag">#architekturakrajobrazu</div>
@@ -997,7 +1003,7 @@
   </section>
 
 <!-- FOOTER-->
-  <footer class="block block--brand footer">
+  <footer class="block block--brand footer" id="footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
           <div class="collapsible__header">
