@@ -80,23 +80,25 @@ body {
 }
 
 
-/*    HEADINGS    */
+/*    HEADINGS    *//*    HEADINGS    *//*    HEADINGS    *//*    HEADINGS    *//*    HEADINGS    */
 h1 {
-  font-size: 3.5rem;
+  font-size: 8vw;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 100%; /* 4.375rem */
   letter-spacing: 0.14rem;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 6vw;
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 3.125rem */
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  
 }
 
 h3 {
@@ -117,35 +119,16 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 2.5vw;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 125%; /* 1.09375rem */
   letter-spacing: 0.035rem;
 }
 
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  h4 {
-    font-size: 14px;
-  }
-  p {
-    font-size: 12px;
-    font-weight: 500;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 60px;
+    font-size: 36px;
   }
   h2 {
     font-size: 40px;
@@ -156,20 +139,51 @@ h5 {
   h4 {
     font-size: 16px;
   }
-  p {
-    font-size: 16px;
-    font-weight: 500;
-  }
+
 }
 
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 36px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+}
+h2 {
+    font-size: 40px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+}
+h3 {
+    font-size: 24px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+}
+h4 {
+    font-size: 16px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+}
+h5 {
+    font-size: 14px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+}
 
-/*    BODY    */
+}
 
+@media screen and (min-width: 488px) {
+  h1 {
+    font-size: 56px; /* Ustawiamy stały rozmiar na małych ekranach */
+}
+h2 {
+    font-size: 30px; /* Ustawiamy stały rozmiar na małych ekranach */
+}
+h3 {
+    font-size: 16px; /* Ustawiamy stały rozmiar na małych ekranach */
+}
+h4 {
+    font-size: 14px; /* Ustawiamy stały rozmiar na małych ekranach */
+}
+h5 {
+    font-size: 12px; /* Ustawiamy stały rozmiar na małych ekranach */
+}
+
+}
+
+/*    BODY    *//*    BODY    *//*    BODY    *//*    BODY    *//*    BODY    *//*    BODY    */
 p {
   text-align: justify;
 }
-
-
 
 .p1_r {
   font-family: Inter;
@@ -234,7 +248,7 @@ p {
 }
 
 
-/*   LABEL   */
+/*   LABEL   *//*   LABEL   *//*   LABEL   *//*   LABEL   *//*   LABEL   *//*   LABEL   */
 
 .l1_r {
   font-family: Inter;
@@ -390,6 +404,9 @@ p {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+
+
 
 
 /*   INFO   */
@@ -1114,89 +1131,111 @@ a {
 
 
 
-/*   WHERE   */
+/*   WHERE   *//*   WHERE   *//*   WHERE   *//*   WHERE   *//*   WHERE   */
 
-.projektujemy-obszary {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 0.3125rem;
-  line-height: 125%;
-  align-self: stretch;
+.where h1{
+  padding-bottom: 24px;
 }
 
-.projektujemy-obszary-tekst {
-  line-height: 70px;
-  letter-spacing: 2.24px;
-  word-wrap: break-word;
-}
-
-.where-cards-grid {
+.article-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr)); /* Dostosuj szerokość kart */
   gap: 1rem; /* Dostosuj odstęp między kartami */
 }
 
-.where-card {
-  display: flex;
-  width: 16.5rem;
-  height: 37.5rem;
-  padding: 1.5rem;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 1rem;
-  border-radius: 1.75rem;
-  background: linear-gradient(0deg, rgba(17, 174, 41, 0.20) 0%, rgba(17, 174, 41, 0.20) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.56) 87.5%);
-  background-blend-mode: hue, darken, normal;
-  box-shadow: 5px 6px 6.1px 0px rgba(0, 0, 0, 0.25);
+.article-card {
+  width: 90%;
+  height: 400px;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 300ms;
 }
 
-.where-card:hover {
-  transform: translateY(-4px);
+.article-card:hover {
+  transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.where-card-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.where-card-heading h3 {
-  color: var(--Neutral-white, var(--Neutral-white));
+.article-card .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
 }
 
-.where-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  color: var(--Neutral-white, var(--Neutral-white));
+.article-card .date,
+.article-card .title {
+  margin: 0;
 }
 
-@media (max-width: 1024px) { /* Dostosuj szerokość, jeśli to konieczne */
-  .where-card {
-    flex-direction: row; /* Zmień kierunek flex na poziomy */
-    width: 100%; /* Ustaw szerokość na 100% ekranu */
-    height: auto; /* Dostosuj wysokość do zawartości */
-  }
+.article-card .date {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+}
 
-  .where-card-heading {
-    width: 50%; /* Ustaw szerokość nagłówka na 50% */
-  }
-
-  .where-card-content {
-    width: 50%; /* Ustaw szerokość zawartości na 50% */
-  }
+.article-card .title {
+  color: #fff;
 }
 
 
 
-/*   MISSION   */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   MISSION   *//*   MISSION   *//*   MISSION   *//*   MISSION   *//*   MISSION   */
 .mission__image {
   display: block;
   margin-left: auto;
@@ -1216,11 +1255,10 @@ a {
   flex: 1 0 0;
 }
 
-
-
-/*   PROJECTS   */
-
-/*   Project - Card   */
+.mission__content p{
+ text-align:unset;
+}
+/*   PROJECTS   *//*   PROJECTS   *//*   PROJECTS   *//*   PROJECTS   *//*   PROJECTS   *//*   PROJECTS   *//*   PROJECTS   */
 .project--content {
   display: flex;
   flex-direction: column;
@@ -1231,15 +1269,22 @@ a {
 
 .project--grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Tworzy 2 kolumny o równej szerokości */
-  grid-gap: 2rem; /* Ustawia odstęp między projektami */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamiczna liczba kolumn */
+  grid-gap: 2rem;
   row-gap: 2rem;
 }
 
 .project {
-  /* Style dla pojedynczego projektu */
+  display: flex;
+  padding: 1rem 1rem 1.5rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
   border: 1px solid var(--Neutral-N400);
-  padding: 1rem;
+  min-width: 300px; /* Minimalna szerokość */
+  flex: 1; /* Rozciąganie do dostępnej przestrzeni */
+  border-radius: 1.3125rem;
+  transition: opacity 1.8s ease-in-out, transform 1.8s ease-in-out, display 1.8s ease-in-out;
 }
 
 /* Opcjonalnie: dostosowanie do mniejszych ekranów */
@@ -1292,9 +1337,9 @@ a {
 }
 
 .project img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   border-radius: 1rem;
 }
 
@@ -1338,6 +1383,19 @@ a {
 }
 
 /* Media queries dla responsywności */
+@media (min-width: 1024px) {
+  .project--grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 kolumny na dużych ekranach */
+  }
+}
+
+@media (max-width: 1023px) {
+  .project--grid {
+      grid-template-columns: 1fr; /* 1 kolumna na mniejszych ekranach */
+  }
+}
+
+/* Media queries dla responsywności */
 @media (max-width: 768px) {
   .project {
       padding: 0.5rem; /* Zmniejszamy padding na mniejszych ekranach */
@@ -1366,10 +1424,7 @@ a {
 
 
 
-/*   TAGS   */
-
-
-
+/*   TAGS   *//*   TAGS   *//*   TAGS   *//*   TAGS   *//*   TAGS   *//*   TAGS   *//*   TAGS   *//*   TAGS   *//*   TAGS   */
 .tags__carousel {
   display: flex;
   overflow: hidden;
@@ -1401,10 +1456,7 @@ a {
   background-color: #63915f; /* lekko ciemniejsza zieleń na hover */
 }
 
-
-
-
-/* CONTACT */
+/* CONTACT *//* CONTACT *//* CONTACT *//* CONTACT *//* CONTACT *//* CONTACT *//* CONTACT *//* CONTACT *//* CONTACT *//* CONTACT */
 
 .contact {
   background-image: url(/assets/images/contact_image.jpeg);
@@ -1522,8 +1574,6 @@ a {
   word-wrap: break-word;
 }
 
-/* Zapytania medialne dla responsywności */
-
 @media (max-width: 768px) {
 
   .contact-container {
@@ -1553,6 +1603,7 @@ a {
       flex-direction: row; /* Ustawienie rzędu dla dużych ekranów */
   }
 }
+
 
 /*   FOOTER   *//*   FOOTER   *//*   FOOTER   *//*   FOOTER   *//*   FOOTER   *//*   FOOTER   *//*   FOOTER   */
 .footer__list {
