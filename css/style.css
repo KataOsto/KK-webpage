@@ -1368,6 +1368,8 @@ a {
 
 /*   TAGS   */
 
+
+
 .tags__carousel {
   display: flex;
   overflow: hidden;
@@ -1384,12 +1386,15 @@ a {
   flex: 0 0 auto;
   padding: 8px 16px;
   margin-right: 12px;
-  background-color: #7cae7a; /* dopasowana zieleń */
+  background-color: var(--Primery-Colors-H300); /* dopasowana zieleń */
   color: white;              /* biały tekst dla czytelności */
+  border: 1px solid var(--Neutral-N100, #F6F6F6);
   border-radius: 20px;
   font-size: 14px;
   user-select: none;
   transition: background-color 0.3s ease;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .tag:hover {
@@ -1427,6 +1432,16 @@ a {
   align-self: stretch;
   justify-content: center;
 }
+
+.contact-info-icon {
+  width: 28.8px;
+  height: 28.8px;
+  position: relative;
+  overflow: hidden;
+  color: var(--Neutral-white);
+}
+
+
 
 .form--area {
   display: grid;
@@ -1544,5 +1559,57 @@ a {
   }
   .footer__section {
       border: 0;
+  }
+}
+
+.made {
+  display: flex;
+  width: 100%; /* Zastąp 100vw na 100% dla lepszej responsywności */
+  min-height: 3.25rem; /* Użyj min-height zamiast height */
+  padding: 1.0625rem 20px; /* Zmień padding na jednostki względne lub stałe */
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--Primery-Colors-H400);
+  box-sizing: border-box; /* Dodaj box-sizing, aby padding nie wpływał na szerokość */
+}
+
+.made--content {
+  width: 100%; /* Dodaj szerokość 100% */
+  max-width: 1200px; /* Ogranicz maksymalną szerokość */
+  margin: 0 auto; /* Wyśrodkuj kontener */
+}
+
+.made--text {
+  color: var(--Neutral-white);
+  text-align: center;
+  font-size: 0.9rem; /* Ustaw bazowy rozmiar czcionki */
+}
+
+/* Zapytania medialne dla responsywności */
+
+@media (max-width: 1024px) {
+  .made {
+      padding: 1.0625rem 20px; /* Dostosuj padding dla tabletów */
+  }
+}
+
+@media (max-width: 768px) {
+  .made {
+      padding: 1.0625rem 15px; /* Dostosuj padding dla mniejszych ekranów */
+  }
+
+  .made--text {
+      font-size: 0.8rem; /* Zmniejsz rozmiar tekstu */
+  }
+}
+
+@media (max-width: 480px) {
+  .made {
+      padding: 1.0625rem 10px; /* Dostosuj padding dla bardzo małych ekranów */
+  }
+
+  .made--text {
+      font-size: 0.7rem; /* Jeszcze mniejszy rozmiar tekstu */
   }
 }
