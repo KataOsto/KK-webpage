@@ -86,7 +86,7 @@ body {
 
 /*    HEADINGS    *//*    HEADINGS    *//*    HEADINGS    *//*    HEADINGS    *//*    HEADINGS    */
 h1 {
-  font-size: 8vw;
+  font-size: 2.2vw;
   font-style: normal;
   font-weight: 700;
   line-height: 125%; /* 4.375rem */
@@ -123,7 +123,7 @@ h4 {
 }
 
 h5 {
-  font-size: 2.5vw;
+  font-size: 14;
   font-style: normal;
   font-weight: 500;
   line-height: 125%; /* 1.09375rem */
@@ -132,7 +132,7 @@ h5 {
 
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 36px;
+    font-size: 2.4vw;
   }
   h2 {
     font-size: 40px;
@@ -148,47 +148,42 @@ h5 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {/* Ustawiamy stały rozmiar na bardzo dużych ekranach */
   h1 {
-    font-size: 36px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+    font-size: 2.vw; 
   }
   h2 {
-    font-size: 40px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+    font-size: 40px; 
   }
   h3 {
-    font-size: 24px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+    font-size: 24px; 
   }
   h4 {
-    font-size: 16px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
+    font-size: 16px;
   }
   h5 {
-    font-size: 14px; /* Ustawiamy stały rozmiar na bardzo dużych ekranach */
-  } 
+    font-size: 14px; 
 }
-
-@media screen and (min-width: 488px) {
+}
+@media screen and (min-width: 488px) {/* Ustawiamy stały rozmiar na małych ekranach */
   h1 {
-    font-size: 3.2rem; /* Ustawiamy stały rozmiar na małych ekranach */
+    font-size: 3.4vw; 
   }
   h2 {
-    font-size: 30px; /* Ustawiamy stały rozmiar na małych ekranach */
+    font-size: 30px; 
   }
   h3 {
-    font-size: 16px; /* Ustawiamy stały rozmiar na małych ekranach */
+    font-size: 16px; 
   }
   h4 {
-    font-size: 1rem; /* Ustawiamy stały rozmiar na małych ekranach */
+    font-size: 1rem; 
   }
   h5 {
-     font-size: 12px; /* Ustawiamy stały rozmiar na małych ekranach */
+     font-size: 12px; 
   }
 }
 
 /*    BODY    *//*    BODY    *//*    BODY    *//*    BODY    *//*    BODY    *//*    BODY    */
-p {
-  /* text-align: justify; */
-}
-
 .p1_r {
   font-family: Inter;
   font-size: 18px;
@@ -402,8 +397,7 @@ p {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  margin-left: 32px;
-  margin-right: 32px;
+
 }
 /*  INFO  *//*  INFO  *//*  INFO  *//*  INFO  *//*  INFO  *//*  INFO  */
 .info-grid-container {
@@ -764,8 +758,7 @@ a {
 
 
 /*    SECTIONS ON THE PAGE        SECTIONS ON THE PAGE        SECTIONS ON THE PAGE       SECTIONS ON THE PAGE     */
-
-/*   NAVBAR   */
+/* NAVBAR */
 
 .nav {
   background: transparent;
@@ -777,19 +770,23 @@ a {
 }
 
 .nav__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  width: 100%;
+  margin: 0;
+  display: none; /* Domyślnie ukrywamy listę w wersji mobilnej */
+}
+
+.nav__list.responsive {
+  display: block; /* Pokazujemy listę po dodaniu klasy responsive */
 }
 
 .nav__item {
-  border-bottom: 1px solid var(--Neutral-white);
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 124%;
+  line-height: 124%; /* 1.24rem */
   letter-spacing: 0.02rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--Neutral-white);
 }
 
 .nav__item:last-of-type {
@@ -833,24 +830,21 @@ a {
 
 @media screen and (min-width: 1024px) {
   .nav__toggler {
-    display: none;
+      display: none;
   }
-  .nav__list {
-    width: auto;
-    display: flex;
-    font-size: 1.6rem;
-    max-height: 100%;
-    opacity: 1;
-  }
-  .nav__item {
-    border: 0;
-    margin: 10px;
-  }
-  .nav__brand img {
-      max-width: 100%; /* Zmniejsz obraz na mniejszych ekranach */
-    }
-}
 
+  .nav__list {
+      width: auto;
+      display: flex; /* Układ rzędowy na większych ekranach */
+      font-size: 1.6rem;
+      max-height: 100%;
+      opacity: 1;
+  }
+
+  .nav__item {
+      border: 0;
+  }
+}
 /*  HERO  *//*  HERO  *//*  HERO  *//*  HERO  *//*  HERO  *//*  HERO  */
 .hero-container {
   position: relative;
@@ -863,29 +857,27 @@ a {
 .hero__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 7.5625rem 8.5rem;
+  align-items: center; /* Wyśrodkowujemy poziomo */
+  justify-content: center; /* Wyśrodkowujemy pionowo */
+  text-align: center; /* Wyśrodkowujemy tekst */
 }
 
 .hero__heading {
-  font-size: 3.5rem;
+  font-size: 2.25vw;
   font-style: normal;
-  font-weight: 600;
   line-height: 125%;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 10.4375rem;
-  padding-bottom: 2rem;
-  justify-content: center;
-  display: flex;
-  height: 3.3125rem;
-  flex-direction: column;
   color: var(--Neutral-white);
+  margin-bottom: 2rem; /* Dodajemy margines dolny dla odstępu od ikony */
 }
 
+.block__heading.hero__heading {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+
+}
 .hero__tagline {
   font-size: 2rem;
   color: var(--Accent-Colors-B200);
@@ -897,37 +889,58 @@ a {
   width: 100%;
 }
 
+.hero-container {
+  height: 95vh;
+  position: relative;
+  background-image: url(/assets/images/hero_image.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: var(--Neutral-white);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wyśrodkowujemy poziomo */
+  justify-content: center; /* Wyśrodkowujemy pionowo */
+  text-align: center; /* Wyśrodkowujemy tekst */
+  margin-top: 38vh;
+}
+
+.hero__heading {
+  font-size: 4vw;
+  font-style: normal;
+  line-height: 125%;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+  color: var(--Neutral-white);
+  margin-bottom: 2rem; 
+  text-align: center;
+}
+
+.block__heading.hero__heading {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.arrow.arrow-circel {
+  align-self: center; 
+}
+
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 5%;
-    padding-bottom: 10%;
-    height: 50rem;
-  }
   .hero__heading {
-    font-size: 2.25rem;
-    line-height: 4.25rem; /* 130.769% */
-    letter-spacing: 0.39rem;
-    line-height: 105%;
-  }
-  
-  .hero__content {
-    text-align: left;
-    align-self: center;
-    padding-bottom: -10vh;
-  }
-  .btn {
-    display: flex;
-    width: 10rem;
-    padding: 0.75rem 1.5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.375rem;
+      font-size: 4vw;
+      line-height: 105%;
+      letter-spacing: 0.39rem;
+      padding-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero__heading {
-    font-size: 3.25rem;
+      font-size: 3vw;
+      padding-bottom: 24px;
   }
 }
 
@@ -947,7 +960,6 @@ a {
 .title--heading {
   display: flex;
   gap: 24px;
-
 }
 
 .title--heading h1 {
