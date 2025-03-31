@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kreatorzy Krajobrazu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/css/animate.min.css">
     <link
       rel="icon"
       type="image/x-icon"
@@ -61,8 +61,8 @@
 </div>
 
 <!-- ABOUT-->
-  <section class="block container" id="about">
-      <header class="block__header about">
+  <section class="block container " id="about">
+      <header class="block__header about mobile-padding">
         <h4 class="header__small_right">GDZIE PROJEKTUJEMY</h4>
       <div class="title-container" data-size="M">
           <span class="title--heading">
@@ -71,8 +71,8 @@
         </div>
       </header>
         
-      <div class="grid grid--1x2">
-        <div class="about--image-content">
+      <div class="grid grid--1x2 ">
+        <div class="about--image-content ">
           <img
             class="about__image"
             src="/assets/images/o_nas_image.jpg"
@@ -80,13 +80,12 @@
           />
         </div>
 
-        <div class="about-content">
+        <div class="about-content mobile-padding">
           <article>
             <p class="p2_r" style="text-align: justify;">
               Jesteśmy zespołem architektów krajobrazu, których pasją jest zieleń –
               zarówno projektowanie jak i ochrona istniejących zadrzewień.
-            </p>
-            <p class="p2_r" style="text-align: justify;">
+              <br>
               Dzięki wieloletniemu doświadczeniu i dbałości o detale tworzymy
               przestrzenie, które harmonijnie łączą funkcjonalność z estetyką,
               zachowując jednocześnie cenne wartości przyrodnicze. Współpracujemy z
@@ -188,7 +187,7 @@
         </p>
 
         <div class="main-container grid grid--1x2">
-          <div class="container ">
+          <div class="container  media--content">
             <div class="media__body">
                 <h3 class="madia__title heading__white ">
                   <img
@@ -332,25 +331,30 @@
             <div class="image-gallery">
               <div class="gallery">
                 <img
-                  src="/assets/images/projects/1_Olsztyn_Towarowa/Olsztyn_Towarowa_1.jpg"
+                  src="/assets/images/projects/4_Olsztyn_tramwaj/Olsztyn_tramwaj_1.jpg"
                   alt="Obrazek miasta 1"
                   class="gallery-image"
                 />
                 <img
-                  src="/assets/images/projects/1_Olsztyn_Towarowa/Olsztyn_Towarowa_2.jpg"
+                  src="/assets/images/projects/4_Olsztyn_tramwaj/Olsztyn_tramwaj_2.jpg"
                   alt="Obrazek miasta 2"
                   class="gallery-image"
                 />
                 <img
-                  src="/assets/images/projects/1_Olsztyn_Towarowa/Olsztyn_Towarowa_3.jpg"
+                  src="/assets/images/projects/4_Olsztyn_tramwaj/Olsztyn_tramwaj_3.jpg"
                   alt="Obrazek miasta 3"
                   class="gallery-image"
                 />
                 <img
-                  src="/assets/images/projects/1_Olsztyn_Towarowa/Olsztyn_Towarowa_4.jpg"
+                  src="/assets/images/projects/4_Olsztyn_tramwaj/Olsztyn_tramwaj_4.jpg"
                   alt="Obrazek miasta 4"
                   class="gallery-image"
                 />
+                <img
+                src="/assets/images/projects/4_Olsztyn_tramwaj/Olsztyn_tramwaj_5.jpg"
+                alt="Obrazek miasta 4"
+                class="gallery-image"
+              />
               </div>
             </div>
             <div class="arrows">
@@ -978,7 +982,7 @@
               >
             </div>
           </div>
-          <div class="contact-info-item">
+          <!-- <div class="contact-info-item">
             <div class="contact-info-icon">
               <img
                 src="/assets/icon/icon_inkedin.svg"
@@ -992,7 +996,7 @@
                 >kreatorzy krajobrazu</a
               >
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -1081,14 +1085,13 @@
 </section>
 
 <!-- JAVASCRIPT-->
-        <script src="/js/main.js"></script> <!-- navbar  -->
-        <!-- <script src="/js/showslides.js"></script> -->
+        <script src="/js/main.js"></script>
         <script src="/js/myNavbar.js"></script>
         <script src="/js/carusel.js"></script>
         <script src="/js/gallery.js"></script>
         <script src="/js/readmore.js"></script>
         <script src="/js/projectmore.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="/js/gsap.min.js"></script>
         <script src="/js/sendMail.js"></script>
   </body>
 </html>

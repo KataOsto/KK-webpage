@@ -6,6 +6,7 @@ if (carousel) {
 
     function autoScroll() {
         scrollPosition += speed;
+        
         if (scrollPosition >= carousel.scrollWidth - carousel.clientWidth) {
             scrollPosition = 0;
         }
@@ -14,10 +15,7 @@ if (carousel) {
     }
 
     carousel.addEventListener('mouseenter', () => carousel.dataset.hover = 'true');
-    carousel.addEventListener('mouseleave', () => {
-        carousel.dataset.hover = 'false';
-        requestAnimationFrame(autoScroll);
-    });
+    carousel.addEventListener('mouseleave', () => carousel.dataset.hover = 'false');
 
     requestAnimationFrame(autoScroll);
 } else {
